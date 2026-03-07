@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "virgilio-master-db",
+  "private_key_id": "3b1337e27b62885e5c38248f336fd41d2e16e84a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCwtptynbLgX06a\nd3Hn3gHLtQD2ydDdBRpViMkLHUXrtpYvHq0Rz5wimJHQaXjkf5ghpbs4d5KcLs6K\n0Ose1ONjTSxY4j2eKwik6S2LoRzcCAaZoLG5ii2h/3zeGZfUcvy+ZQGMQrJrhhF7\n08S19ySGWAEstioFeXsIrbiD7Lak9SUptZGIae7W7LLihNq3HdPsut9LhKA8ukPe\ndZ8CCRIq8ijcBc/crFlmXNehzRyUpp6nrfZ4KSgrf/OVOLNyMdO5eM4EjYOckgbw\nq+ey8ctm/k9C+G4JyaUMXs5bgaxh8aB5m3Kdtse8gN5V+IesQAhYQ/BETRSkIMOm\n8Hd7BzVHAgMBAAECggEAG/NmNwTWjELG7gvCiohFBHGGy4I0dSEffzP5iLaCnrvs\nmVtiyJRr/9TeC3cDVjEQYRITwOS43ddReAd/iQrnRIeqYgy27lOkNGFlgNZk+DCU\nyqvuMIi4mw0MNR0bNNFTRNI5InRSQEuebFWcoaOLtWwqE2Zk0yTZ3w+LReKlKQYS\nGnHsP033AZx9MGn/Li/6mMGo47GamkZgq5ENtc4xuG2beWkrp+SJacFhXW4hzGfC\nJqQK8RPiTT2u2KRaTjuhPtPB54oy3+XLlRoU32MufGhW0BxFmmUrLkdk32qXFSZZ\nFfuVc1R8sW9aMAe096jWqWS28Bij+1RHjpbGHgTGQQKBgQDdQlVOrPARQWCOwQIg\n5iZPlZBRyXFxkjj8bpB7IlOPQO0xySltrfiaxn3WLXId5MI2AsA0KK3ys/Hh1Yh8\nwDpHioRi4o5EWYMvtaQ6EqaBql+IS/hI6sg6DJPl+9jI9Okb0ix8IGlYOsPSbk1j\nO7Tmm5FX+KnJC6DEtynqKnmtUQKBgQDMdblMXBaUWI965AmToat7oRmetmskfoWN\nhqv2Ntbc5DUso50V8aYH3bDL2AqadPpsiVBOjojn5LZSZSwQ5UmAkKC63oZTHYDZ\n04McLdnWUTiamXlo+DasW9h2TpVRFUb+WS36BexHzB8/Yw2Oc3ZhDV7d6yLGVg+b\nSoA/2RmzFwKBgGwLj2La+mRCu6caQzLTkJO+Yno914LxN5i1WSJ4EbvbpbhxFiT0\nFnlmQl7LVHWalugPEdKmpsLk8lIolvzsVclHr/wly/k+iNxMZATjxKF/FCWXi4f3\n9oy6RaLCCAuh5Q9r48M9hJPMJoHk0S+LIXyXLTN7P1Xosro9A1/RHBfxAoGALVCG\nIfti8bvzCNyTlsnFFOBuqjNp6au089n+MNKUql5VvrAAd8WX87RZo8QdDYCRpA6G\n4vJKO4MAOaC8tH3s3XaweNoq0S7/yMdNDqjG1+4manVLaE1i6K5uekIOa+sYUfT3\n8KrxZDREVKsibQkAGqB4/xxHF8gpK1TGud/nBz8CgYAsEpcFuoK0+WPEjFF2rD6v\n9QdwN2IKjPyObjJFbC3i7Dfd1F03g+Cmot6Q6gGwn4Rx6yYLn5GUgRdGZzqYs6ua\nYf4JJuazGpXbdjV/M6ySM4K4B12faRWA0ujJE2yQ4K4BtNfP41obU7rFWXw8uug8\nlXzEuKWgmbt7X421WfksBg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@virgilio-master-db.iam.gserviceaccount.com",
+  "client_id": "100305348192443555653",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40virgilio-master-db.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

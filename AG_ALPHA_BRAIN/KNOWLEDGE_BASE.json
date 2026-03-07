@@ -1,0 +1,29 @@
+{
+    "identity": "VIRGILIO AGENT V4 ELITE",
+    "architecture": "Super-Engineer Core (Thread-Safe) + Node Bridge",
+    "successful_patterns": [
+        "Async file streaming in Node.js",
+        "SSIM and Frequency analysis in Python Lab",
+        "Pystray for System Tray persistence",
+        "Firebase Cloud-First metadata syncing"
+    ],
+    "integrated_apis": {
+        "Telegram": "node-telegram-bot-api",
+        "Gemini": "google-generativeai",
+        "Cloud": "firebase-admin",
+        "Vision": "opencv-python (Local) + Gemini Vision (Cloud)"
+    },
+    "superpowers": [
+        "Bot Algorithm Reverse Engineering",
+        "320kbps Music Batch Hunter",
+        "Dynamic Consciousness Swap (Gemini/GPT/DeepSeek)",
+        "Zero-Persistence Disk Optimization",
+        "Pro CAD/PCB/Research Submenu"
+    ],
+    "activation_date": "2026-03-07",
+    "master_folders": {
+        "CAJON": "Drop and analyze raw files",
+        "BENCH": "Temporary working clones",
+        "CHIMENEA": "Safe file disposal"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "device": "Ortur Laser Master 2 Pro S2 10W",
+    "categories": {
+        "Wood": {
+            "3mm_Plywood": {
+                "speed": 350,
+                "power": 100,
+                "passes": 1,
+                "description": "Corte limpio"
+            },
+            "Engraving": {
+                "speed": 3000,
+                "power": 30,
+                "description": "Grabado suave"
+            }
+        },
+        "Acrylic": {
+            "3mm_Black": {
+                "speed": 200,
+                "power": 100,
+                "passes": 2,
+                "description": "Corte lento con aire"
+            }
+        },
+        "Leather": {
+            "Natural": {
+                "speed": 2500,
+                "power": 25,
+                "description": "Grabado profundo"
+            }
+        },
+        "Fabric": {
+            "Cotton": {
+                "speed": 5000,
+                "power": 15,
+                "description": "Marcado rápido"
+            }
+        }
+    },
+    "ftdi_config": {
+        "Laser_Baud": 115200,
+        "DMX_Baud": 250000,
+        "CNC_Baud": 115200
+    },
+    "midi_map": {
+        "CH1": "Master Dimmer",
+        "CH2": "Laser PWM",
+        "CH3": "CNC Feed Rate"
+    }
+}
