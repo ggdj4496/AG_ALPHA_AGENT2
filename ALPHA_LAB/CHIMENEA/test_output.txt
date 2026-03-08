@@ -1,0 +1,102 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Program Files\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\AG_ALPHA_AGENT
+plugins: anyio-4.12.1, asyncio-1.3.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 8 items
+
+TESTS/test_core.py::test_orchestrator_singleton FAILED                   [ 12%]
+TESTS/test_core.py::test_managers_loading FAILED                         [ 25%]
+TESTS/test_core.py::test_system_auditor_report PASSED                    [ 37%]
+TESTS/test_core.py::test_ai_manager_status PASSED                        [ 50%]
+TESTS/test_assimilation_plus.py::test_model_deduction PASSED             [ 62%]
+TESTS/test_assimilation_plus.py::test_api_footprint_analysis PASSED      [ 75%]
+TESTS/test_assimilation_plus.py::test_cnc_processing_logic FAILED        [ 87%]
+TESTS/test_assimilation_plus.py::test_latent_reconstruction_masking PASSED [100%]
+
+================================== FAILURES ===================================
+_________________________ test_orchestrator_singleton _________________________
+
+    def test_orchestrator_singleton():
+>       core1 = CoreOrchestrator()
+                ^^^^^^^^^^^^^^^^^^
+
+tests\test_core.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <core_orchestrator.CoreOrchestrator object at 0x000001E4E5D36A50>
+
+    def __init__(self):
+        if self.initialized:
+            return
+    
+        self.logger = logging.getLogger("VIRGILIO_CORE")
+        self.managers: Dict[str, Any] = {
+            "ai": AIManager(),
+            "auditor": SystemAuditor(),
+            "network": NetworkOptimizer(),
+>           "engine": VirgilioEngine(),
+                      ^^^^^^^^^^^^^^
+            "lab": LabManager()
+        }
+E       NameError: name 'VirgilioEngine' is not defined
+
+ALPHA_CORE\core_orchestrator.py:33: NameError
+____________________________ test_managers_loading ____________________________
+
+    def test_managers_loading():
+>       core = CoreOrchestrator()
+               ^^^^^^^^^^^^^^^^^^
+
+tests\test_core.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <core_orchestrator.CoreOrchestrator object at 0x000001E4E5D36A50>
+
+    def __init__(self):
+        if self.initialized:
+            return
+    
+        self.logger = logging.getLogger("VIRGILIO_CORE")
+        self.managers: Dict[str, Any] = {
+            "ai": AIManager(),
+            "auditor": SystemAuditor(),
+            "network": NetworkOptimizer(),
+>           "engine": VirgilioEngine(),
+                      ^^^^^^^^^^^^^^
+            "lab": LabManager()
+        }
+E       NameError: name 'VirgilioEngine' is not defined
+
+ALPHA_CORE\core_orchestrator.py:33: NameError
+__________________________ test_cnc_processing_logic __________________________
+
+    def test_cnc_processing_logic():
+>       cnc = VisionCNCManager()
+              ^^^^^^^^^^^^^^^^^^
+E       TypeError: Can't instantiate abstract class VisionCNCManager without an implementation for abstract method 'get_status'
+
+TESTS\test_assimilation_plus.py:31: TypeError
+============================== warnings summary ===============================
+ALPHA_CORE\managers\ai_manager.py:2
+  C:\AG_ALPHA_AGENT\TESTS\..\ALPHA_CORE\managers\ai_manager.py:2: FutureWarning: 
+  
+  All support for the `google.generativeai` package has ended. It will no longer be receiving 
+  updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+  See README for more details:
+  
+  https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+  
+    import google.generativeai as genai
+
+TESTS/test_core.py::test_system_auditor_report
+  C:\Program Files\Python314\Lib\site-packages\GPUtil\GPUtil.py:73: DeprecationWarning: Use shutil.which instead of find_executable
+    nvidia_smi = spawn.find_executable('nvidia-smi')
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED TESTS/test_core.py::test_orchestrator_singleton - NameError: name 'Vir...
+FAILED TESTS/test_core.py::test_managers_loading - NameError: name 'VirgilioE...
+FAILED TESTS/test_assimilation_plus.py::test_cnc_processing_logic - TypeError...
+=================== 3 failed, 5 passed, 2 warnings in 6.80s ===================
